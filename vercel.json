@@ -4,12 +4,9 @@
     { "src": "api/**/*.js", "use": "@vercel/node" },
     { "src": "public/**/*", "use": "@vercel/static" }
   ],
-  "routes": [
-    { "src": "/api/(.*)", "dest": "/api/$1.js" },
-    { "src": "/(.*)", "dest": "/public/$1" }
-  ],
   "rewrites": [
-    { "source": "/:path*", "destination": "/public/:path*.html" }
+    { "source": "/api/(.*)", "destination": "/api/$1.js" },
+    { "source": "/:path*", "destination": "/:path*.html" }
   ],
   "redirects": [
     { "source": "/:path*.html", "destination": "/:path*", "permanent": true }
