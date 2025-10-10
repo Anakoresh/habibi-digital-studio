@@ -82,7 +82,11 @@
                     <div class="services-check-boxes d-flex flex-column">
                         <div class="check-box-container d-flex align-items-center">
                             <div class="check-box"><img src="img/mark.svg" alt="check mark"></div>
-                            <p>Websites from Scratch</p>
+                            <p>Landing Page</p>
+                        </div>
+                        <div class="check-box-container d-flex align-items-center">
+                            <div class="check-box"><img src="img/mark.svg" alt="check mark"></div>
+                            <p>Multi-page Website</p>
                         </div>
                         <div class="check-box-container d-flex align-items-center">
                             <div class="check-box"><img src="img/mark.svg" alt="check mark"></div>
@@ -103,10 +107,6 @@
                         <div class="check-box-container d-flex align-items-center">
                             <div class="check-box"><img src="img/mark.svg" alt="check mark"></div>
                             <p>UI Design Only (Figma)</p>
-                        </div>
-                        <div class="check-box-container d-flex align-items-center">
-                            <div class="check-box"><img src="img/mark.svg" alt="check mark"></div>
-                            <p>One-page Promo Website</p>
                         </div>
                     </div>
                 </div>
@@ -178,8 +178,35 @@
                         <img src="img/minus.png" class="d-none" alt="to shrink form">
                         <p>Service-Specific Questions:</p>
                     </div>
+                    <div id="one-page-project" class="project-details-form d-none flex-column">
+                        <h4 class="space-grotesk-font">Landing Page:</h4>
+                        <div class="project-detail-container d-flex align-items-center">
+                            <p>What is the goal of this page (event, link-in-bio, offer, etc.)?</p>
+                            <textarea name="one-page-project-goal" id="one-page-project-goal"></textarea>
+                        </div>
+                        <div class="project-detail-container d-flex align-items-center">
+                            <p>Short content outline (what should be on the page):</p>
+                            <textarea name="project-content" id="project-content"></textarea>
+                        </div>
+                        <div class="project-detail-container d-flex align-items-center">
+                            <p>Do you have a domain & hosting?</p>
+                            <div class="custom-select">
+                                <select name="domain-hosting-availability" id="domain-hosting-availability">
+                                    <option disabled selected value> -- select -- </option>
+                                    <option value="no">No</option>
+                                    <option value="domain">Domain</option>
+                                    <option value="hosting">Hosting</option>
+                                    <option value="domain-hosting">Domain & hosting</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="project-detail-container d-flex align-items-center">
+                            <p>Should it include any integrations (forms, maps, buttons)?</p>
+                            <textarea name="project-integrations" id="project-integrations"></textarea>
+                        </div>
+                    </div>
                     <div id="website-development-project" class="project-details-form d-none flex-column">
-                        <h4 class="space-grotesk-font">Websites from Scratch</h4>
+                        <h4 class="space-grotesk-font">Multi-page Website</h4>
                         <div class="project-detail-container d-flex align-items-center">
                             <p>Type of website:<mark>*</mark></p>
                             <div class="custom-select">
@@ -319,33 +346,6 @@
                                     <option value="no">No</option>
                                 </select>
                             </div>
-                        </div>
-                    </div>
-                    <div id="one-page-project" class="project-details-form d-none flex-column">
-                        <h4 class="space-grotesk-font">One-page Promo Website:</h4>
-                        <div class="project-detail-container d-flex align-items-center">
-                            <p>What is the goal of this page (event, link-in-bio, offer, etc.)?</p>
-                            <textarea name="one-page-project-goal" id="one-page-project-goal"></textarea>
-                        </div>
-                        <div class="project-detail-container d-flex align-items-center">
-                            <p>Short content outline (what should be on the page):</p>
-                            <textarea name="project-content" id="project-content"></textarea>
-                        </div>
-                        <div class="project-detail-container d-flex align-items-center">
-                            <p>Do you have a domain & hosting?</p>
-                            <div class="custom-select">
-                                <select name="domain-hosting-availability" id="domain-hosting-availability">
-                                    <option disabled selected value> -- select -- </option>
-                                    <option value="no">No</option>
-                                    <option value="domain">Domain</option>
-                                    <option value="hosting">Hosting</option>
-                                    <option value="domain-hosting">Domain & hosting</option>
-                                </select>
-                            </div>
-                        </div>
-                        <div class="project-detail-container d-flex align-items-center">
-                            <p>Should it include any integrations (forms, maps, buttons)?</p>
-                            <textarea name="project-integrations" id="project-integrations"></textarea>
                         </div>
                     </div>
                 </div>
