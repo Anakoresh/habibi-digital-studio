@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://habibidigitalstudio.com/public/sitemap.xml
+
