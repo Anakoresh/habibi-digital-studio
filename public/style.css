@@ -21,7 +21,7 @@ svg {
 
 .header {
     background-color: rgba(15, 0, 39, 0.3);
-    position: absolute;
+    position: fixed;
     z-index: 1000;
     top: 0;
     bottom: 0;
@@ -107,6 +107,7 @@ svg {
 
 .home .container, 
 .services .container, 
+.products .container,
 .contacts .container {
     position: relative;
     z-index: 100;
@@ -160,7 +161,7 @@ svg {
     border: 3px solid #E6E6E6;
 }
 
-.services, .contacts {
+.services, .contacts, .products {
     background-color: #0F0027;
 }
 
@@ -327,6 +328,73 @@ svg {
     color: #0B001A;
     font-weight: 600;
 }
+
+/* Products */
+
+.products h3 {
+    font-size: 32px;
+    text-align: center;
+    color: #E6E6E6;
+}
+
+.products-container {
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    width: 100%;
+    gap: 20px;
+}
+
+.product-container {
+    width: calc((100% - 20px) / 2);
+    max-width: 400px;
+    min-height: 500px;
+    border: 2px solid #00F0FF;
+    box-shadow: 0px 5px 10px rgba(0, 240, 255, 1);
+    padding: 20px;
+}
+
+.product-container h4 {
+    text-align: center;
+    font-size: 24px;
+    color: #00F0FF;
+}
+
+.product-container p {
+    font-size: 20px;
+    color: #E6E6E6;
+    margin-top: 20px;
+}
+
+.product-container ul {
+    font-size: 18px;
+    color: #E6E6E6;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.product-info {
+    width: 100%;
+}
+
+.product-info img {
+    width: 50%;
+}
+
+.product-container a {
+    text-decoration: none;
+    color: #FF4EFF;
+    font-size: 20px;
+    padding: 10px;
+    border: 2px solid #FF4EFF;
+    box-shadow: 0px 2.5px 5px rgba(255, 78, 255, 0.5);
+}
+
+.product-container a:hover {
+    background-color: #FF4EFF;
+    color: #0B001A;
+}
+
+/* Portfolio */
 
 .portfolio {
     background-image: url(img/portfolio-bg.webp);
@@ -1004,6 +1072,67 @@ svg {
     background-color: #00F0FF;
 }
 
+/* Product page */
+
+.product-section {
+    background: #0F0027;
+}
+
+.product-section .contacts-btns {
+    margin-bottom: 40px;
+    margin-top: 20px;
+}
+
+.menu-tamplates, .packages {
+    padding: 40px 20px;
+}
+
+.menu-tamplates h3, .packages h3 {
+    color: #00F0FF;
+    font-size: 32px;
+    text-align: center;
+}
+
+.templates-links {
+    gap: 20px;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.menu-tamplates a {
+    text-align: center;
+    text-decoration: none;
+    color: #0B001A;
+    padding: 10px 20px;
+    width: 50%;
+    max-width: 400px;
+    background-color: #00F0FF;
+    font-size: 32px;
+    box-shadow: 0px 2.5px 5px rgba(0, 240, 255, 1);
+}
+
+.menu-tamplates a:hover {
+    background-color: #FF4EFF;
+    scale: 1.1;
+}
+
+.packages p {
+    color: #E6E6E6;
+    font-size: 24px;
+    margin: 20px 0 0 0;
+    text-align: center;
+}
+
+.packages a {
+    color: #FF4EFF;
+    font-size: 20px;
+    text-align: center;
+}
+
+.packages a:hover {
+    color: #E6E6E6;
+}
+
 @media (max-width: 1200px) {
     .services-line-bottom {
         top: 1240px;
@@ -1125,6 +1254,10 @@ svg {
 
     .contacts-btns-container {
         height: 400px;
+    }
+
+    .product-container {
+        width: 80%;
     }
 
     .portfolio-item h3 {
@@ -1338,6 +1471,11 @@ svg {
     .service-info-container ul {
         margin-top: 10px;
     }
+
+    .menu-tamplates a {
+        font-size: 24px;
+        padding: 10px;
+    }
 }
 
 @media (max-width: 576px) {
@@ -1404,6 +1542,16 @@ svg {
 
     .services-line-mobile-bottom-2 {
         top: 3120px;
+    }
+
+    .product-container {
+        width: 100%;
+    }
+
+    .product-info {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
     }
 
     .contacts .subtitle {
@@ -1497,6 +1645,14 @@ svg {
     .consultation-request-modal {
         width: 90%;
     }
+
+    .templates-links {
+        flex-direction: column;
+    }
+
+    .menu-tamplates a {
+        width: 100%;
+    }
 }
 
 @media (max-width: 450px) {
@@ -1546,6 +1702,10 @@ svg {
 
     .service-item span {
         font-size: 18px;
+    }
+
+    .product-container p, .product-info ul {
+        margin: 0;
     }
 
     .portfolio-item-big {
