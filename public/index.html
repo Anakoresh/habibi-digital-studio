@@ -1,402 +1,563 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Habibi Digital Studio — Custom Web Solutions</title>
-    <meta name="description" content="Habibi Digital Studio creates unique websites, landing pages, and web applications. Full cycle: design, development, and support.">
-    <meta name="keywords" content="Habibi Digital Studio, website creation, web applications, landing pages, design, development, UX/UI, SEO">
+    <title>Habibi Digital Studio | Web Development, Web Apps, Digital Menu & Telegram Mini Apps</title>
+    <meta name="description" content="We are a digital studio building modern websites, web applications, and Telegram Mini Apps for startups, hotels, restaurants, and creators. Fast, clean, conversion-focused digital products." />
+    <meta name="keywords" content="web development, landing pages, web applications, telegram mini apps, UI UX design, digital products, SaaS development, freelance developer, custom websites">
+    <meta property="og:title" content="Habibi Digital Studio" />
+    <meta property="og:description" content="Web development, web apps, digital menu & Telegram Mini Apps for modern businesses." />
+    <meta property="og:image" content="https://habibidigitalstudio.com/img/og-image.png" />
+    <meta property="og:url" content="https://habibigiditalstudio.com/" />
+    <meta property="og:type" content="website" />
     <link rel="icon" type="image/png" href="favicon.png" sizes="32x32">
     <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="canonical" href="https://habibidigitalstudio.com/" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script type="application/ld+json">
+        {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "Habibi Digital Studio",
+        "url": "https://habibidigitalstudio.com",
+        "logo": "https://habibidigitalstudio.com/img/logo.png",
+        "sameAs": [
+            "https://www.instagram.com/habibidigitalstudio"
+        ]
+        }
+    </script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-37ZN8G8W0D"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
-
         gtag('config', 'G-37ZN8G8W0D');
     </script>
 </head>
-
 <body>
+
+<!-- ── Page Intro ─────────────────────────────────────────────── -->
+    <div id="page-intro">
+        <div class="intro-logo orbitron-font">Habibi Digital Studio</div>
+        <div class="intro-bar"><div class="intro-bar-fill"></div></div>
+    </div>
+
+    <!-- ── Header ────────────────────────────────────────────────── -->
     <header class="header">
         <div class="container d-flex align-items-center justify-content-between space-grotesk-font">
-            <a href="/" class="logo">
-                <img src="img/logo.png" alt="logo">
-            </a>
+            <a href="/" class="logo"><img src="img/logo.png" alt="Habibi Digital Studio logo"></a>
             <a class="menu-item" href="/">Home</a>
-            <a class="menu-item" href="/#services">Services</a>
-            <a class="menu-item" href="/#products">Products</a>
-            <a class="menu-item" href="/#portfolio">Portfolio</a>
-            <a class="menu-item" href="/#contacts">Contacts</a>
+            <a class="menu-item" href="#services">Services</a>
+            <a class="menu-item" href="#products">Products</a>
+            <a class="menu-item" href="#portfolio">Portfolio</a>
+            <a class="menu-item" href="#contacts">Contacts</a>
             <a class="menu-item" href="blog.html">Blog</a>
-            <button id="burger-btn" class="burger-btn"><img src="img/burger.png" alt="burger menu"></button>
+            <button id="burger-btn" class="burger-btn"><img src="img/burger.png" alt="menu"></button>
         </div>
         <nav id="menu" class="menu space-grotesk-font flex-column align-items-center">
             <a href="/">Home</a>
-            <a href="/#services">Services</a>
-            <a href="/#products">Products</a>
-            <a href="/#portfolio">Portfolio</a>
-            <a href="/#contacts">Contacts</a>
+            <a href="#services">Services</a>
+            <a href="#products">Products</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contacts">Contacts</a>
             <a href="blog.html">Blog</a>
         </nav>
     </header>
+
+    <!-- ── Home ──────────────────────────────────────────────────── -->
     <section id="home" class="home section orbitron-font d-flex justify-content-center align-items-center">
-        <svg class="home-line" viewBox="0 0 1440 540" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+        <svg class="home-line" viewBox="0 0 1440 540" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" style="opacity: 0.4;">
             <path d="M0 524L212.739 139.076H501.24L902.132 339.311H1268.91L1440 6"
-                    stroke="#E6E6E6"
-                    stroke-linecap="round"
-                    stroke-dasharray="2200"
-                    stroke-dashoffset="2200">
-                <animate attributeName="stroke-dashoffset"
-                        values="2200;0;2200"
-                        keyTimes="0;0.5;1"
-                        dur="6s"
-                        repeatCount="indefinite" />
+                stroke="#E6E6E6" stroke-linecap="round" stroke-dasharray="2200" stroke-dashoffset="2200">
+                <animate attributeName="stroke-dashoffset" values="2200;0;2200" keyTimes="0;0.5;1" dur="6s" repeatCount="indefinite"/>
             </path>
         </svg>
         <svg class="home-line-mobile" viewBox="0 0 606 511" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
             <path d="M0 494 L135.028 241.776 H470.972 L606 7"
-                    stroke="#E6E6E6"
-                    stroke-width="5"
-                    stroke-linecap="round"
-                    stroke-dasharray="2200"
-                    stroke-dashoffset="2200">
-                <animate attributeName="stroke-dashoffset"
-                        values="2200;0;2200"
-                        keyTimes="0;0.5;1"
-                        dur="6s"
-                        repeatCount="indefinite" />
+                stroke="#E6E6E6" stroke-width="5" stroke-linecap="round" stroke-dasharray="2200" stroke-dashoffset="2200">
+                <animate attributeName="stroke-dashoffset" values="2200;0;2200" keyTimes="0;0.5;1" dur="6s" repeatCount="indefinite"/>
             </path>
         </svg>
         <div class="container d-flex flex-column align-items-center">
-            <h1 class="main-title">Custom digital experiences</h1>
-            <h2 class="subtitle space-grotesk-font">Built to impress</h2>
-            <div class="home-btns d-flex flex-column">
+            <p class="home-tagline reveal">Web Development studio · Digital Products · Working globally</p>
+            <h1 class="main-title reveal reveal-delay-1">Web Development & Apps for Modern Businesses</h1>
+            <h2 class="subtitle space-grotesk-font reveal reveal-delay-2">We help businesses, hotels, and creators build modern websites, landing pages, and web applications.</h2>
+            <div class="home-btns d-flex flex-column reveal reveal-delay-3">
                 <button class="consultation-btn">FREE CONSULTATION</button>
                 <button onclick="window.location.href='start-project.html'">START A PROJECT</button>
             </div>
-        </div>
-    </section>
-    <section id="services" class="services section">   
-        <svg class="services-line services-line-top" viewBox="0 0 1440 540" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-            <path d="M-7.00007 6L164.094 339.311H530.868L931.76 139.076H1220.26L1433 524" 
-                stroke="#E6E6E6"
-                stroke-linecap="round"
-                stroke-dasharray="2200"
-                stroke-dashoffset="2200">
-            <animate attributeName="stroke-dashoffset"
-                values="2200;0;2200"
-                keyTimes="0;0.5;1"
-                dur="4s"
-                repeatCount="indefinite" />
-        </svg>
-        <svg class="services-line services-line-top-2" viewBox="0 0 1440 540" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-            <path d="M-7.00007 6L164.094 339.311H530.868L931.76 139.076H1220.26L1433 524" 
-                stroke="#E6E6E6"
-                stroke-linecap="round"
-                stroke-dasharray="2200"
-                stroke-dashoffset="2200">
-            <animate attributeName="stroke-dashoffset"
-                values="2200;0;2200"
-                keyTimes="0;0.5;1"
-                dur="8s"
-                repeatCount="indefinite" />
-        </svg>
-        <svg class="services-line-mobile services-line-mobile-top" viewBox="0 0 606 511" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-            <path d="M0 7 L135.028 261.224 H470.972 L606 494"
-                stroke="#E6E6E6"
-                stroke-width="5"
-                stroke-linecap="round"
-                stroke-dasharray="2200"
-                stroke-dashoffset="2200">
-            <animate attributeName="stroke-dashoffset"
-                values="2200;0;2200"
-                keyTimes="0;0.5;1"
-                dur="4s"
-                repeatCount="indefinite" />
-            </path>
-        </svg>
-        <svg class="services-line-mobile services-line-mobile-top-2" viewBox="0 0 606 511" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-            <path d="M0 7 L135.028 261.224 H470.972 L606 494"
-                stroke="#E6E6E6"
-                stroke-width="5"
-                stroke-linecap="round"
-                stroke-dasharray="2200"
-                stroke-dashoffset="2200">
-            <animate attributeName="stroke-dashoffset"
-                values="2200;0;2200"
-                keyTimes="0;0.5;1"
-                dur="8s"
-                repeatCount="indefinite" />
-            </path>
-        </svg>
-        <div class="container d-flex flex-column align-items-center">
-            <h2 class="section-title orbitron-font">What we offer</h2>
-            <div class="services-container d-flex">
-                <div class="service-item d-flex flex-column align-items-center justify-content-between">
-                    <img src="img/service-6.svg" alt="websites service">
-                    <h3 class="orbitron-font">Landing Page (design & development)</h3>
-                    <ul class="space-grotesk-font">
-                        <li>Minimal & powerful. From a simple promo to a multi-section site with custom features:</li>
-                        <li>Minimal / Sandard / Advanced Landing Page</li>
-                        <li>Clean design + coding</li>
-                    </ul>
-                    <span class="space-grotesk-font">FROM $120</span>
-                    <p class="space-grotesk-font">~ from 2-10 days for minimal / standard landing and more for bigger project</p>
-                    <a class="orbitron-font" href="/services/landing-page.html">MORE</a>
+            <div class="home-stats reveal reveal-delay-4">
+                <div class="stat-item">
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label">Projects Done</div>
                 </div>
-                <div class="service-item d-flex flex-column align-items-center justify-content-between">
-                    <img src="img/service-1.svg" alt="websites service">
-                    <h3 class="orbitron-font">Multi-page Website (design & development)</h3>
-                    <ul class="space-grotesk-font">
-                        <li>Full-cycle website creation:</li>
-                        <li>Basic / Standard / Corporate or CMS-based website</li>
-                        <li>(portfolio, blog, info sites, or business sites)</li>
-                        <li>Clean code + basic SEO</li>
-                    </ul>
-                    <span class="space-grotesk-font">FROM $450</span>
-                    <p class="space-grotesk-font">~ from 10 days for basic website and more for standard or corporate</p>
-                    <a class="orbitron-font" href="/services/website-development.html">MORE</a>
+                <div class="stat-item">
+                    <div class="stat-number">2</div>
+                    <div class="stat-label">Digital Products</div>
                 </div>
-                <div class="service-item d-flex flex-column align-items-center justify-content-between">
-                    <img src="img/service-2.svg" alt="websites service">
-                    <h3 class="orbitron-font">Web Application / Complex Site</h3>
-                    <ul class="space-grotesk-font">
-                        <li>Complex sites with:</li>
-                        <li>User roles & dashboards</li>
-                        <li>CMS to manage content (text, images, products)</li>
-                        <li>Scalable & flexible structure</li>
-                        <li>Dinamic content</li>
-                        <li>Basic / Medium Web App</li>
-                    </ul>
-                    <span class="space-grotesk-font">FROM $800</span>
-                    <p class="space-grotesk-font">~ 1 month or more <br>Limited – discussed individually</p>
-                    <a class="orbitron-font" href="/services/web-application.html">MORE</a>
-                </div>
-                <div class="service-item d-flex flex-column align-items-center justify-content-between">
-                    <img src="img/service-3.svg" alt="websites service">
-                    <h3 class="orbitron-font">Redesign & Fixes</h3>
-                    <ul class="space-grotesk-font">
-                        <li>Let's improve what you already have:</li>
-                        <li>Full website audit</li>
-                        <li>Visual redesign</li>
-                        <li>Bug fixing & layout improvements</li>
-                    </ul>
-                    <span class="space-grotesk-font">FROM $250</span>
-                    <p class="space-grotesk-font">~ 7 days and more</p>
-                    <a class="orbitron-font" href="/services/website-redesign.html">MORE</a>
-                </div>
-                <div class="service-item d-flex flex-column align-items-center justify-content-between">
-                    <img src="img/service-4.svg" alt="websites service">
-                    <h3 class="orbitron-font">Site Audit Only</h3>
-                    <ul class="space-grotesk-font">
-                        <li>Want feedback before investing in changes?</li>
-                        <li>Full UX, design & tech check</li>
-                        <li>PDF report with actionable suggestions</li>
-                    </ul>
-                    <span class="space-grotesk-font">FROM $50</span>
-                    <p class="space-grotesk-font">~ 2-5 days</p>
-                    <a class="orbitron-font" href="/services/site-audit.html">MORE</a>
-                </div>
-                <div class="service-item d-flex flex-column align-items-center justify-content-between">
-                    <img src="img/service-5.svg" alt="websites service">
-                    <h3 class="orbitron-font">UI Design (Figma Only)</h3>
-                    <ul class="space-grotesk-font">
-                        <li>Clean and modern interface design — created with usability in mind:</li>
-                        <li>Full-page layouts for desktop and/or mobile</li>
-                        <li>Logical flow and structure</li>
-                        <li>Colors, fonts, components, hover states</li>
-                    </ul>
-                    <span class="space-grotesk-font">FROM $200</span>
-                    <p class="space-grotesk-font">~ 7-10 days or more <br>Design only — no coding included</p>
-                    <a class="orbitron-font" href="/services/ui-design.html">MORE</a>
-                </div>
-                <div class="service-item d-flex flex-column align-items-center justify-content-between">
-                    <img src="img/service-7.svg" alt="websites service">
-                    <h3 class="orbitron-font">Quick Fixes & Improvements</h3>
-                    <ul class="space-grotesk-font">
-                        <li>Small changes - big difference:</li>
-                        <li>Add forms, maps, WhatsApp</li>
-                        <li>Improve mobile layout</li>
-                        <li>Add new sections</li>
-                    </ul>
-                    <span class="space-grotesk-font">FROM $50</span>
-                    <p class="space-grotesk-font">~ 2 days or more</p>
-                    <a class="orbitron-font" href="/services/quick-fixes.html">MORE</a>
+                <div class="stat-item">
+                    <div class="stat-number">$120</div>
+                    <div class="stat-label">Starting From</div>
                 </div>
             </div>
         </div>
+    </section>
+
+    <!-- ── Services ──────────────────────────────────────────────── -->
+    <section id="services" class="services section">
+        <svg class="services-line services-line-top" viewBox="0 0 1440 540" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <path d="M-7.00007 6L164.094 339.311H530.868L931.76 139.076H1220.26L1433 524" stroke="#E6E6E6" stroke-linecap="round" stroke-dasharray="2200" stroke-dashoffset="2200">
+                <animate attributeName="stroke-dashoffset" values="2200;0;2200" keyTimes="0;0.5;1" dur="4s" repeatCount="indefinite"/>
+            </path>
+        </svg>
+        <svg class="services-line services-line-top-2" viewBox="0 0 1440 540" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <path d="M-7.00007 6L164.094 339.311H530.868L931.76 139.076H1220.26L1433 524" stroke="#E6E6E6" stroke-linecap="round" stroke-dasharray="2200" stroke-dashoffset="2200">
+                <animate attributeName="stroke-dashoffset" values="2200;0;2200" keyTimes="0;0.5;1" dur="8s" repeatCount="indefinite"/>
+            </path>
+        </svg>
+        <svg class="services-line services-line-top-3" viewBox="0 0 1440 540" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <path d="M-7.00007 6L164.094 339.311H530.868L931.76 139.076H1220.26L1433 524" stroke="#E6E6E6" stroke-linecap="round" stroke-dasharray="2200" stroke-dashoffset="2200">
+                <animate attributeName="stroke-dashoffset" values="2200;0;2200" keyTimes="0;0.5;1" dur="4s" repeatCount="indefinite"/>
+            </path>
+        </svg>
+        <svg class="services-line-mobile services-line-mobile-top" viewBox="0 0 606 511" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <path d="M0 7 L135.028 261.224 H470.972 L606 494" stroke="#E6E6E6" stroke-width="5" stroke-linecap="round" stroke-dasharray="2200" stroke-dashoffset="2200">
+                <animate attributeName="stroke-dashoffset" values="2200;0;2200" keyTimes="0;0.5;1" dur="4s" repeatCount="indefinite"/>
+            </path>
+        </svg>
+        <svg class="services-line-mobile services-line-mobile-top-2" viewBox="0 0 606 511" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+            <path d="M0 7 L135.028 261.224 H470.972 L606 494" stroke="#E6E6E6" stroke-width="5" stroke-linecap="round" stroke-dasharray="2200" stroke-dashoffset="2200">
+                <animate attributeName="stroke-dashoffset" values="2200;0;2200" keyTimes="0;0.5;1" dur="8s" repeatCount="indefinite"/>
+            </path>
+        </svg>
+
+        <div class="container d-flex flex-column align-items-center">
+            <p class="section-tag reveal">What we build</p>
+            <h2 class="section-title orbitron-font reveal" style="color:#FF4EFF;">Our Services</h2>
+            <p class="subtitle space-grotesk-font reveal" style="font-size:18px; margin-top:12px; max-width:680px; opacity:0.7;">
+                From a fast landing page to a full-scale web application — we pick the right tool for your goal.
+            </p>
+
+            <!-- Group 1: Fast Solutions -->
+            <div class="service-group reveal" style="margin-top:60px;">
+                <div class="service-group-header">
+                    <div class="service-group-icon cyan">
+                        <img src="img/service-6.svg" alt="fast solutions">
+                    </div>
+                    <div>
+                        <div class="service-group-title cyan orbitron-font">Fast Solutions</div>
+                        <div class="service-group-desc">Quick, affordable, conversion-focused</div>
+                    </div>
+                </div>
+                <div class="services-container d-flex">
+                    <div class="service-item d-flex flex-column align-items-center justify-content-between">
+                        <img src="img/service-6.svg" alt="Landing page development service for fast conversion websites">
+                        <h3 class="orbitron-font">Landing Page</h3>
+                        <ul class="space-grotesk-font">
+                            <li>Minimal, Standard, or Advanced</li>
+                            <li>Clean design + responsive coding</li>
+                            <li>SEO-optimized & fast-loading</li>
+                            <li>CTA-focused layout</li>
+                        </ul>
+                        <span class="space-grotesk-font">FROM $150</span>
+                        <p class="space-grotesk-font">~ 2–7 days</p>
+                        <a class="orbitron-font" href="/services/landing-page.html">LEARN MORE</a>
+                    </div>
+                    <div class="service-item d-flex flex-column align-items-center justify-content-between">
+                        <img src="img/service-1.svg" alt="Multi-page website development for business and portfolio sites">
+                        <h3 class="orbitron-font">Multi-page Website</h3>
+                        <ul class="space-grotesk-font">
+                            <li>Portfolio, business, catalog sites</li>
+                            <li>Basic / Standard / Corporate</li>
+                            <li>Clean code + basic SEO</li>
+                            <li>Mobile-first responsive design</li>
+                        </ul>
+                        <span class="space-grotesk-font">FROM $450</span>
+                        <p class="space-grotesk-font">~ 7-14 days</p>
+                        <a class="orbitron-font" href="/services/website-development.html">LEARN MORE</a>
+                    </div>
+                    <div class="service-item d-flex flex-column align-items-center justify-content-between">
+                        <img src="img/design.svg" alt="UI UX design in Figma for websites and web apps">
+                        <h3 class="orbitron-font">UI Design (Figma)</h3>
+                        <ul class="space-grotesk-font">
+                            <li>Full-page layouts desktop & mobile</li>
+                            <li>Logical flow & structure</li>
+                            <li>Colors, fonts, components</li>
+                            <li>Design only — no coding</li>
+                        </ul>
+                        <span class="space-grotesk-font">FROM $100</span>
+                        <p class="space-grotesk-font">~ from 5 days</p>
+                        <a class="orbitron-font" href="/services/ui-design.html">LEARN MORE</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Group 2: Improvements -->
+            <div class="service-group reveal">
+                <div class="service-group-header">
+                    <div class="service-group-icon magenta">
+                        <img src="img/service-3.svg" alt="improvements">
+                    </div>
+                    <div>
+                        <div class="service-group-title magenta orbitron-font">Improvements & Audits</div>
+                        <div class="service-group-desc">Already have a site? Let's make it better.</div>
+                    </div>
+                </div>
+                <div class="services-container d-flex">
+                    <div class="service-item d-flex flex-column align-items-center justify-content-between">
+                        <img src="img/service-4.svg" alt="Website audit for UX, SEO and performance optimization">
+                        <h3 class="orbitron-font">Site Audit</h3>
+                        <ul class="space-grotesk-font">
+                            <li>Full UX, design & tech check</li>
+                            <li>SEO & speed assessment</li>
+                            <li>PDF report with action items</li>
+                            <li>Invest smarter before rebuilding</li>
+                        </ul>
+                        <span class="space-grotesk-font">FROM $50</span>
+                        <p class="space-grotesk-font">~ 2–5 days</p>
+                        <a class="orbitron-font" href="/services/site-audit.html">LEARN MORE</a>
+                    </div>
+                    <div class="service-item d-flex flex-column align-items-center justify-content-between">
+                        <img src="img/service-7.svg" alt="Quick website fixes and improvements including mobile optimization and new features">
+                        <h3 class="orbitron-font">Quick Fixes</h3>
+                        <ul class="space-grotesk-font">
+                            <li>Add forms, maps, WhatsApp</li>
+                            <li>Improve mobile layout</li>
+                            <li>Add new sections</li>
+                            <li>Small changes — big difference</li>
+                        </ul>
+                        <span class="space-grotesk-font">FROM $70</span>
+                        <p class="space-grotesk-font">~ 2 days+</p>
+                        <a class="orbitron-font" href="/services/quick-fixes.html">LEARN MORE</a>
+                    </div>
+                    <div class="service-item d-flex flex-column align-items-center justify-content-between">
+                        <img src="img/redesign.svg" alt="Website redesign and performance improvement service">
+                        <h3 class="orbitron-font">Redesign & Fixes</h3>
+                        <ul class="space-grotesk-font">
+                            <li>Full website audit</li>
+                            <li>Visual redesign</li>
+                            <li>Bug fixing & layout improvements</li>
+                            <li>Mobile-friendly upgrades</li>
+                        </ul>
+                        <span class="space-grotesk-font">FROM $250</span>
+                        <p class="space-grotesk-font">~ 7 days+</p>
+                        <a class="orbitron-font" href="/services/website-redesign.html">LEARN MORE</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Group 3: Custom Development -->
+            <div class="service-group reveal">
+                <div class="service-group-header">
+                    <div class="service-group-icon cyan">
+                        <img src="img/service-2.svg" alt="custom development">
+                    </div>
+                    <div>
+                        <div class="service-group-title cyan orbitron-font">Custom Development</div>
+                        <div class="service-group-desc">Complex systems built from the ground up</div>
+                    </div>
+                </div>
+                <div class="services-container d-flex">
+                    <div class="service-item d-flex flex-column align-items-center justify-content-between">
+                        <img src="img/service-2.svg" alt="Custom web application development with dashboards and databases">
+                        <h3 class="orbitron-font">Web Applications</h3>
+                        <ul class="space-grotesk-font">
+                            <li>User roles & dashboards</li>
+                            <li>CMS to manage content</li>
+                            <li>Authentication & databases</li>
+                            <li>Scalable architecture</li>
+                        </ul>
+                        <span class="space-grotesk-font">FROM $800</span>
+                        <p class="space-grotesk-font">~ 1 month+</p>
+                        <a class="orbitron-font" href="/services/web-application.html">LEARN MORE</a>
+                    </div>
+                    <div class="service-item d-flex flex-column align-items-center justify-content-between">
+                        <img src="img/mini-app.svg" alt="Telegram Mini App development with payments and integrations">
+                        <h3 class="orbitron-font">Telegram Mini Apps</h3>
+                        <ul class="space-grotesk-font">
+                            <li>Custom mini app development</li>
+                            <li>Payments & subscriptions</li>
+                            <li>Bot integrations</li>
+                            <li>Discussed individually</li>
+                        </ul>
+                        <span class="space-grotesk-font">FROM $600</span>
+                        <p class="space-grotesk-font">~ discussed individually</p>
+                        <a class="orbitron-font" href="/services/telegram-mini-app.html">GET IN TOUCH</a>
+                    </div>
+                    <div class="service-item d-flex flex-column align-items-center justify-content-between">
+                        <img src="img/service-2.svg" alt="AI automation and API integration for business workflows">
+                        <h3 class="orbitron-font">AI & Automation</h3>
+                        <ul class="space-grotesk-font">
+                            <li>AI chatbot integrations</li>
+                            <li>API integrations & automation</li>
+                            <li>Smart workflows</li>
+                            <li>Custom logic systems</li>
+                        </ul>
+                        <span class="space-grotesk-font">FROM $300</span>
+                        <p class="space-grotesk-font">~ discussed individually</p>
+                        <a class="orbitron-font" href="/services/ai-automation.html">GET IN TOUCH</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <svg class="services-line services-line-bottom" viewBox="0 0 1440 540" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-            <path d="M-7.00007 6L164.094 339.311H530.868L931.76 139.076H1220.26L1433 524" 
-                stroke="#E6E6E6"
-                stroke-linecap="round"
-                stroke-dasharray="2200"
-                stroke-dashoffset="2200">
-            <animate attributeName="stroke-dashoffset"
-                values="2200;0;2200"
-                keyTimes="0;0.5;1"
-                dur="8s"
-                repeatCount="indefinite" />
+            <path d="M-7.00007 6L164.094 339.311H530.868L931.76 139.076H1220.26L1433 524" stroke="#E6E6E6" stroke-linecap="round" stroke-dasharray="2200" stroke-dashoffset="2200">
+                <animate attributeName="stroke-dashoffset" values="2200;0;2200" keyTimes="0;0.5;1" dur="8s" repeatCount="indefinite"/>
+            </path>
         </svg>
         <svg class="services-line services-line-bottom-2" viewBox="0 0 1440 540" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-            <path d="M-7.00007 6L164.094 339.311H530.868L931.76 139.076H1220.26L1433 524" 
-                stroke="#E6E6E6"
-                stroke-linecap="round"
-                stroke-dasharray="2200"
-                stroke-dashoffset="2200">
-            <animate attributeName="stroke-dashoffset"
-                values="2200;0;2200"
-                keyTimes="0;0.5;1"
-                dur="4s"
-                repeatCount="indefinite" />
+            <path d="M-7.00007 6L164.094 339.311H530.868L931.76 139.076H1220.26L1433 524" stroke="#E6E6E6" stroke-linecap="round" stroke-dasharray="2200" stroke-dashoffset="2200">
+                <animate attributeName="stroke-dashoffset" values="2200;0;2200" keyTimes="0;0.5;1" dur="4s" repeatCount="indefinite"/>
+            </path>
         </svg>
         <svg class="services-line-mobile services-line-mobile-bottom" viewBox="0 0 606 511" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-            <path d="M0 7 L135.028 261.224 H470.972 L606 494"
-                    stroke="#E6E6E6"
-                    stroke-width="5"
-                    stroke-linecap="round"
-                    stroke-dasharray="2200"
-                    stroke-dashoffset="2200">
-                <animate attributeName="stroke-dashoffset"
-                        values="2200;0;2200"
-                        keyTimes="0;0.5;1"
-                        dur="8s"
-                        repeatCount="indefinite" />
+            <path d="M0 7 L135.028 261.224 H470.972 L606 494" stroke="#E6E6E6" stroke-width="5" stroke-linecap="round" stroke-dasharray="2200" stroke-dashoffset="2200">
+                <animate attributeName="stroke-dashoffset" values="2200;0;2200" keyTimes="0;0.5;1" dur="8s" repeatCount="indefinite"/>
             </path>
         </svg>
         <svg class="services-line-mobile services-line-mobile-bottom-2" viewBox="0 0 606 511" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-            <path d="M0 7 L135.028 261.224 H470.972 L606 494"
-                    stroke="#E6E6E6"
-                    stroke-width="5"
-                    stroke-linecap="round"
-                    stroke-dasharray="2200"
-                    stroke-dashoffset="2200">
-                <animate attributeName="stroke-dashoffset"
-                        values="2200;0;2200"
-                        keyTimes="0;0.5;1"
-                        dur="4s"
-                        repeatCount="indefinite" />
+            <path d="M0 7 L135.028 261.224 H470.972 L606 494" stroke="#E6E6E6" stroke-width="5" stroke-linecap="round" stroke-dasharray="2200" stroke-dashoffset="2200">
+                <animate attributeName="stroke-dashoffset" values="2200;0;2200" keyTimes="0;0.5;1" dur="4s" repeatCount="indefinite"/>
             </path>
         </svg>
     </section>
+
+    <!-- ── Products ───────────────────────────────────────────────── -->
     <section id="products" class="products section">
         <div class="container">
-            <h2 class="section-title orbitron-font">Products</h2>
-            <h3 class="space-grotesk-font">Ready-made digital solutions for restaurants & hospitality</h3>
+            <p class="section-tag reveal">Ready-made digital products</p>
+            <h2 class="section-title orbitron-font reveal" style="color:#00F0FF;">Digital Products</h2>
+            <h3 class="space-grotesk-font reveal" style="margin-top:10px;">Buy once. Use forever. Built for real businesses.</h3>
             <div class="products-container d-flex justify-content-center">
-                <div class="product-container d-flex flex-column align-items-center">
+
+                <!-- Digital Menu -->
+                <div class="product-container d-flex flex-column align-items-center reveal reveal-delay-1">
+                    <span class="product-badge new">Ready to buy</span>
                     <h4 class="orbitron-font">Digital Menu (NFC & QR)</h4>
-                    <p class="space-grotesk-font">A modern digital menu with optional NFC & QR stickers. Designed for cafes, restaurants, and hotels.</p>
+                    <p class="space-grotesk-font">A modern digital menu with NFC & QR stickers — designed for cafes, restaurants, and hotels. Mobile-first, easy to update, ready to use.</p>
                     <div class="product-info d-flex justify-content-between">
                         <ul>
-                            <li>NFC & QR stickers</li>
+                            <li>NFC & QR stickers included</li>
                             <li>2 menu templates to choose from</li>
                             <li>Mobile-first design</li>
-                            <li>Easy to update</li>
-                            <li>Ready to use</li>
+                            <li>Easy to update content</li>
+                            <li>Hosting & setup included</li>
                         </ul>
                         <img src="img/product-1.png" alt="digital menu">
                     </div>
                     <a class="orbitron-font" href="/products/digital-menu.html">LEARN MORE</a>
                 </div>
+
+                <!-- Progress App -->
+                <div class="product-container d-none flex-column align-items-center reveal reveal-delay-2">
+                    <span class="product-badge featured">Ready to launch</span>
+                    <h4 class="orbitron-font">Telegram Mini App System</h4>
+                    <p class="space-grotesk-font">A ready-to-use system for creators, coaches, and businesses to sell programs, courses, or services directly inside Telegram (with monetization).</p>
+                    <div class="product-info d-flex justify-content-between">
+                        <ul>
+                            <li>Built-in payments & subscriptions</li>
+                            <li>Step-by-step program structure</li>
+                            <li>User progress tracking</li>
+                            <li>Fully customizable for your business</li>
+                            <li>Launch-ready system</li>
+                        </ul>
+                        <img src="img/product-2.png" alt="digital menu">
+                    </div>
+                    <a class="orbitron-font" href="https://progressapp.habibidigitalstudio.com" target="_blank" rel="noopener">LEARN MORE</a>
+                </div>
+
             </div>
         </div>
     </section>
+
+    <!-- Progress App Feature Section -->
+    <section class="progress-app-section">
+        <div class="container">
+
+            <div class="pa-header reveal">
+                <p class="section-tag" style="color:rgba(230,230,230,0.35)">Freelancer Growth System</p>
+                <h2 class="section-title orbitron-font">
+                    <span style="color:#00F0FF;">Progress App</span> — <span style="color:#FF4EFF;">AI-Powered</span> Tools for Freelancers
+                </h2>
+                <p class="subtitle space-grotesk-font" style="max-width:640px; opacity:0.65; margin:12px auto;">
+                    A Telegram Mini App built for freelancers who want real results. Two structured programs, a smart planner, AI tools, and content generation — all in one place. Less scrolling, more doing.
+                </p>
+            </div>
+
+            <!-- Programs -->
+            <div class="pa-programs-grid reveal">
+
+                <div class="pa-prog-card pa-prog-cyan">
+                    <span class="pa-prog-badge pa-badge-cyan orbitron-font">Program 01</span>
+                    <h3 class="pa-prog-title orbitron-font">Find Your First Client</h3>
+                    <p class="pa-prog-days space-grotesk-font">10 DAYS · ACTION-BASED</p>
+                    <p class="pa-prog-desc space-grotesk-font">A step-by-step challenge for freelancers starting from zero. Each day you get real tasks to complete — no theory, just action.</p>
+                    <ul class="pa-prog-list space-grotesk-font">
+                        <li>Daily action tasks</li>
+                        <li>Cold outreach scripts & portfolio tips</li>
+                        <li>Progress tracking with milestones</li>
+                        <li>Planner with system & custom tasks</li>
+                    </ul>
+                    <div class="pa-prog-footer">
+                        <a href="https://progressapp.habibidigitalstudio.com" target="_blank" rel="noopener" class="pa-prog-link pa-link-cyan orbitron-font">LEARN MORE →</a>
+                    </div>
+                </div>
+
+                <div class="pa-prog-card pa-prog-mag">
+                    <span class="pa-prog-badge pa-badge-mag orbitron-font">Program 02</span>
+                    <h3 class="pa-prog-title orbitron-font">AI-Powered Freelancer</h3>
+                    <p class="pa-prog-days space-grotesk-font">7 DAYS · ACTION-BASED</p>
+                    <p class="pa-prog-desc space-grotesk-font">Level up your freelance business using AI. Pitches, proposals, positioning, and client acquisition — all with AI workflows.</p>
+                    <ul class="pa-prog-list space-grotesk-font">
+                        <li>Daily action tasks</li>
+                        <li>Prompts, scripts & templates included</li>
+                        <li>Progress tracking with milestones</li>
+                        <li>Planner with system & custom tasks</li>
+                    </ul>
+                    <div class="pa-prog-footer">
+                        <a href="https://progressapp.habibidigitalstudio.com" target="_blank" rel="noopener" class="pa-prog-link pa-link-mag orbitron-font">LEARN MORE →</a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Tools block -->
+            <div class="pa-tools-block reveal">
+                <p class="pa-tools-label orbitron-font">✦ Built-in Tools</p>
+                <h3 class="pa-tools-title orbitron-font">More Than a Program — a Full Toolkit</h3>
+                <p class="pa-tools-desc space-grotesk-font">Beyond the programs, Progress App includes free tools to keep freelancers consistent, creative, and self-aware.</p>
+
+                <div class="pa-feats-row1">
+                    <div class="pa-feat">
+                        <div class="pa-feat-icon"><img src="img/goal.png" alt="ai-goal"></div>
+                        <p class="pa-feat-name orbitron-font">AI Goal Generator</p>
+                        <p class="pa-feat-desc space-grotesk-font">Turn vague intentions into clear, actionable freelance goals</p>
+                    </div>
+                    <div class="pa-feat">
+                        <div class="pa-feat-icon"><img src="img/reflection.png" alt="ai-reflection"></div>
+                        <p class="pa-feat-name orbitron-font">AI Reflection</p>
+                        <p class="pa-feat-desc space-grotesk-font">Daily prompts to analyze progress and adjust your direction</p>
+                    </div>
+                    <div class="pa-feat">
+                        <div class="pa-feat-icon"><img src="img/idea.png" alt="ai-ideas"></div>
+                        <p class="pa-feat-name orbitron-font">AI Content Ideas</p>
+                        <p class="pa-feat-desc space-grotesk-font">Generate niche content ideas to stay visible on social media</p>
+                    </div>
+                </div>
+                <div class="pa-feats-row2">
+                    <div class="pa-feat">
+                        <div class="pa-feat-icon"><img src="img/planner.png" alt="planner"></div>
+                        <p class="pa-feat-name orbitron-font">Smart Planner</p>
+                        <p class="pa-feat-desc space-grotesk-font">System tasks + your own custom tasks in one daily view</p>
+                    </div>
+                    <div class="pa-feat">
+                        <div class="pa-feat-icon"><img src="img/metrics.png" alt="metrics"></div>
+                        <p class="pa-feat-name orbitron-font">Progress Metrics</p>
+                        <p class="pa-feat-desc space-grotesk-font">Visual tracking to keep you accountable day by day</p>
+                    </div>
+                </div>
+
+                <p class="pa-free-note space-grotesk-font">✦ All tools are free — programs require access</p>
+            </div>
+
+            <!-- CTA -->
+            <div class="pa-cta-row reveal">
+                <a href="https://progressapp.habibidigitalstudio.com" target="_blank" rel="noopener" class="pa-btn-main orbitron-font">LEARN MORE →</a>
+                <a href="https://t.me/HabibiProgressApp_bot" target="_blank" rel="noopener" class="pa-btn-ghost orbitron-font">OPEN IN TELEGRAM ↗</a>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ── Portfolio ──────────────────────────────────────────────── -->
     <section id="portfolio" class="portfolio section">
         <div class="container">
-            <h2 class="section-title orbitron-font">Portfolio</h2>
+            <p class="section-tag reveal" style="color:rgba(230,230,230,0.4)">What we've built</p>
+            <h2 class="section-title orbitron-font reveal" style="color:#00F0FF;">Portfolio</h2>
             <div class="portfolio-container d-flex">
                 <div class="portfolio-container-left d-flex flex-column">
-                    <div class="portfolio-item portfolio-item-big d-flex flex-column align-items-center justify-content-between">
+                    <div class="portfolio-item portfolio-item-big d-flex flex-column align-items-center justify-content-between reveal">
                         <h3 class="orbitron-font">Hostel Website</h3>
-                        <p class="space-grotesk-font">Type: Multi-page website <br>Tools: Figma, HTML, CSS, JS</p>
-                        <p class="portfolio-item-description space-grotesk-font">A modern website for a hostel with a clean, user-friendly interface. It includes a main landing page with essential sections and separate pages for individual rooms. Booking redirects to an external reservation system.</p>
+                        <p class="portfolio-item-meta space-grotesk-font">Multi-page website · HTML / CSS / JS</p>
+                        <p class="portfolio-item-description space-grotesk-font">A modern, user-friendly hostel website with a clean landing page and individual room pages. Booking connects to an external reservation system. Built from a custom Figma design.</p>
                         <div class="portfolio-item-btns orbitron-font d-flex justify-content-between">
-                            <a class="open-preview" href="https://habibihostel.com">LIVE PREVIEW</a>
-                            <a class="open-github" href="https://github.com/Anakoresh/habibi-hostel-new">GITHUB</a>
+                            <a class="open-preview" href="https://habibihostel.com" target="_blank" rel="noopener">LIVE PREVIEW</a>
                         </div>
                     </div>
-                    <div class="portfolio-item portfolio-item-small d-flex flex-column align-items-center justify-content-between">
+                    <div class="portfolio-item portfolio-item-small d-flex flex-column align-items-center justify-content-between reveal">
                         <h3 class="orbitron-font">Online Clothing Store</h3>
-                        <p class="space-grotesk-font">Type: E-commerce Web App<br>Tools: Figma, Nuxt.js, API, Supabase</p>
-                        <p class="portfolio-item-description space-grotesk-font">Nuxt.js e-commerce with custom server, Supabase DB, dynamic products, cart (size/color), and checkout.</p>
+                        <p class="portfolio-item-meta space-grotesk-font">E-commerce Web App · Nuxt.js / Supabase</p>
+                        <p class="portfolio-item-description space-grotesk-font">Full e-commerce app with dynamic products, cart (size/color), custom checkout, and a Supabase database backend.</p>
                         <div class="portfolio-item-btns orbitron-font d-flex justify-content-between">
-                            <a class="open-github" href="https://github.com/Anakoresh/solunara-shop">GITHUB</a>
-                            <a class="open-preview" href="https://solunara-shop.vercel.app/">LIVE PREVIEW</a>
+                            <a class="open-preview" href="https://solunara-shop.vercel.app/" target="_blank" rel="noopener">LIVE PREVIEW</a>
                         </div>
                     </div>
                 </div>
                 <div class="portfolio-container-right d-flex flex-column">
-                    <div class="portfolio-item portfolio-item-small d-flex flex-column align-items-center justify-content-between">
-                        <h3 class="orbitron-font">Artist’s Website</h3>
-                        <p class="space-grotesk-font">Type: Landing page <br>Tools: Figma, HTML, CSS, JS</p>
-                        <p class="portfolio-item-description space-grotesk-font">A one-page landing site designed in an artistic style, showcasing the brand’s creative identity.</p>
+                    <div class="portfolio-item portfolio-item-small d-flex flex-column align-items-center justify-content-between reveal">
+                        <h3 class="orbitron-font">Artist's Landing Page</h3>
+                        <p class="portfolio-item-meta space-grotesk-font">Landing page · HTML / CSS / JS</p>
+                        <p class="portfolio-item-description space-grotesk-font">A one-page landing site designed in an artistic style, showcasing the brand's creative identity with bold visuals and smooth interactions.</p>
                         <div class="portfolio-item-btns orbitron-font d-flex justify-content-between">
-                            <a class="open-github" href="https://github.com/Anakoresh/dantail-art">GITHUB</a>
-                            <a class="open-preview" href="https://anakoresh.github.io/dantail-art">LIVE PREVIEW</a>
+                            <a class="open-preview" href="https://anakoresh.github.io/dantail-art" target="_blank" rel="noopener">LIVE PREVIEW</a>
                         </div>
                     </div>
-                    <div class="portfolio-item portfolio-item-big d-flex flex-column align-items-center justify-content-between">
+                    <div class="portfolio-item portfolio-item-big d-flex flex-column align-items-center justify-content-between reveal">
                         <h3 class="orbitron-font">Hostel Web App</h3>
-                        <p class="space-grotesk-font">Type: Web App, complex website <br>Tools: Figma, HTML, CSS, JS, Node.js, database</p>
-                        <p class="portfolio-item-description space-grotesk-font">A full-featured web application with user accounts, events and tours bookings, a guest dashboard with order history, and an admin panel (CMS) to manage tours, events, and benefits. Includes invoice emails to guests, chats (general, admin).</p>
+                        <p class="portfolio-item-meta space-grotesk-font">Web Application · Node.js / JS / DB</p>
+                        <p class="portfolio-item-description space-grotesk-font">A full-featured web app with user accounts, events & tours booking, a guest dashboard with order history, admin CMS panel, invoice emails, and group chat.</p>
                         <div class="portfolio-item-btns orbitron-font d-flex justify-content-between">
-                            <a class="open-preview" href="https://habibiexperience.com">LIVE PREVIEW</a>
-                            <a class="open-github" href="https://github.com/Anakoresh/habibi-experience">GITHUB</a>
+                            <a class="open-preview" href="https://habibiexperience.com" target="_blank" rel="noopener">LIVE PREVIEW</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- ── Contacts ───────────────────────────────────────────────── -->
     <section id="contacts" class="contacts section">
         <svg class="home-line" viewBox="0 0 1440 540" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
             <path d="M0 524L212.739 139.076H501.24L902.132 339.311H1268.91L1440 6"
-                    stroke="#E6E6E6"
-                    stroke-linecap="round"
-                    stroke-dasharray="2200"
-                    stroke-dashoffset="2200">
-                <animate attributeName="stroke-dashoffset"
-                        values="2200;0;2200"
-                        keyTimes="0;0.5;1"
-                        dur="6s"
-                        repeatCount="indefinite" />
+                stroke="#E6E6E6" stroke-linecap="round" stroke-dasharray="2200" stroke-dashoffset="2200">
+                <animate attributeName="stroke-dashoffset" values="2200;0;2200" keyTimes="0;0.5;1" dur="6s" repeatCount="indefinite"/>
             </path>
         </svg>
         <svg class="home-line-mobile" viewBox="0 0 606 511" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
             <path d="M0 494 L135.028 241.776 H470.972 L606 7"
-                    stroke="#E6E6E6"
-                    stroke-width="5"
-                    stroke-linecap="round"
-                    stroke-dasharray="2200"
-                    stroke-dashoffset="2200">
-                <animate attributeName="stroke-dashoffset"
-                        values="2200;0;2200"
-                        keyTimes="0;0.5;1"
-                        dur="6s"
-                        repeatCount="indefinite" />
+                stroke="#E6E6E6" stroke-width="5" stroke-linecap="round" stroke-dasharray="2200" stroke-dashoffset="2200">
+                <animate attributeName="stroke-dashoffset" values="2200;0;2200" keyTimes="0;0.5;1" dur="6s" repeatCount="indefinite"/>
             </path>
         </svg>
         <div class="container d-flex flex-column align-items-center">
-            <h2 class="section-title orbitron-font">Contacts</h2>
-            <h3 class="subtitle space-grotesk-font">Feel free to reach out to us through any of the channels below.</h3>
+            <p class="section-tag reveal" style="color:rgba(230,230,230,0.4)">Let's work together</p>
+            <h2 class="section-title orbitron-font reveal" style="color:#FF4EFF;">Get In Touch</h2>
+            <h3 class="subtitle space-grotesk-font reveal">Have a project idea? Let's talk — free consultation, no strings attached.</h3>
             <div class="contacts-btns-container d-flex justify-content-center align-items-center">
-                <div class="contacts-btns orbitron-font d-flex flex-column">
+                <div class="contacts-btns orbitron-font d-flex flex-column reveal">
                     <button class="consultation-btn">FREE CONSULTATION</button>
                     <button onclick="window.location.href='start-project.html'">START A PROJECT</button>
                 </div>
             </div>
-            <div class="contacts-links space-grotesk-font d-flex flex-column">
-                <a href="https://www.instagram.com/habibidigitalstudio?igsh=MXAwNTRpMmc2aTBoNQ%3D%3D&utm_source=qr"><img src="img/instagram.svg" alt="instagram"> @habibidigitalstudio</a>
-                <a href="mailto:habibidigitalstudio@gmail.com"><img src="img/email.svg" alt="email"> habibidigitalstudio@gmail.com</a>
-                <a href="https://wa.me/94764209240"><img src="img/whatsapp.svg" alt="whatsapp"> +94764209240</a>
+            <div class="contacts-links space-grotesk-font d-flex flex-column reveal">
+                <a href="https://www.instagram.com/habibidigitalstudio" target="_blank" rel="noopener">
+                    <img src="img/instagram.svg" alt="instagram"> @habibidigitalstudio
+                </a>
+                <a href="mailto:habibidigitalstudio@gmail.com">
+                    <img src="img/email.svg" alt="email"> habibidigitalstudio@gmail.com
+                </a>
+                <a href="https://wa.me/94764209240" target="_blank" rel="noopener">
+                    <img src="img/whatsapp.svg" alt="whatsapp"> +94 76 420 9240
+                </a>
             </div>
         </div>
+
+        <!-- Consultation Modal -->
         <div class="consultation-request-container d-none">
             <div class="overlay"></div>
             <div class="consultation-request-modal d-flex flex-column align-items-center justify-content-center">
@@ -404,15 +565,15 @@
                 <div class="customer-data-form d-flex flex-column">
                     <div class="data-container d-flex justify-content-between align-items-center">
                         <p>Name:<mark>*</mark></p>
-                        <input type="text" class="space-grotesk-font">
+                        <input type="text" class="space-grotesk-font" placeholder="Your name">
                     </div>
                     <div class="data-container d-flex justify-content-between align-items-center">
                         <p>Email:<mark>*</mark></p>
-                        <input type="email" class="space-grotesk-font">
+                        <input type="email" class="space-grotesk-font" placeholder="your@email.com">
                     </div>
                     <div class="data-container d-flex justify-content-between align-items-center">
                         <p>WhatsApp:</p>
-                        <input type="tel" class="space-grotesk-font">
+                        <input type="tel" class="space-grotesk-font" placeholder="+1 234 567 890">
                     </div>
                     <div class="data-form-btns d-flex justify-content-between orbitron-font">
                         <button class="consultation-cancel-btn">CANCEL</button>
@@ -421,26 +582,32 @@
                 </div>
             </div>
         </div>
+
+        <!-- Success Modal -->
         <div class="sucsess-message-container d-none">
             <div class="overlay"></div>
             <div class="sucsess-message-modal d-flex align-items-center justify-content-center">
-                <p class="orbitron-font">We've received the request and we will contact you shortly!</p>
+                <p class="orbitron-font">We've received your request and will contact you shortly!</p>
                 <span class="orbitron-font close-modal">X</span>
             </div>
         </div>
     </section>
+
+    <!-- ── Footer ─────────────────────────────────────────────────── -->
     <footer class="footer">
         <div class="container d-flex justify-content-between align-items-center">
             <div class="footer-links d-flex flex-column space-grotesk-font">
-                <a href="https://www.instagram.com/habibidigitalstudio?igsh=MXAwNTRpMmc2aTBoNQ%3D%3D&utm_source=qr"><mark>Instagram:</mark> @habibidigitalstudio</a>
+                <a href="https://www.instagram.com/habibidigitalstudio" target="_blank" rel="noopener"><mark>Instagram:</mark> @habibidigitalstudio</a>
                 <a href="mailto:habibidigitalstudio@gmail.com"><mark>Email:</mark> habibidigitalstudio@gmail.com</a>
                 <a href="https://wa.me/94764209240" target="_blank" rel="noopener"><mark>WhatsApp:</mark> +94 76 420 9240</a>
             </div>
-            <p class="orbitron-font footer-text">Habibi digital studio<br>2025</p>
-            <p class="orbitron-font footer-text-mobile">Habibi digital studio 2025</p>
+            <p class="orbitron-font footer-text">Habibi Digital Studio<br>2025</p>
+            <p class="orbitron-font footer-text-mobile">Habibi Digital Studio 2025</p>
         </div>
     </footer>
+
     <script src="main.js" type="module"></script>
     <script src="consultation.js" type="module"></script>
+    <script src="animations.js" type="module"></script>
 </body>
 </html>

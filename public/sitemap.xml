@@ -6,135 +6,114 @@
 
   <url>
     <loc>https://habibidigitalstudio.com/</loc>
-<<<<<<< HEAD
-    <lastmod>2026-01-08</lastmod>
-=======
-    <lastmod>2025-10-10</lastmod>
->>>>>>> 6c4052b7d0373c1edfda02fc5aa19e6d8dcf1c3b
+    <lastmod>2026-05-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
 
   <url>
     <loc>https://habibidigitalstudio.com/blog</loc>
-<<<<<<< HEAD
-    <lastmod>2026-01-08</lastmod>
-=======
-    <lastmod>2025-10-10</lastmod>
->>>>>>> 6c4052b7d0373c1edfda02fc5aa19e6d8dcf1c3b
+    <lastmod>2026-05-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://habibidigitalstudio.com/articles/why-custom-designs-win</loc>
-<<<<<<< HEAD
-    <lastmod>2026-01-08</lastmod>
-=======
-    <lastmod>2025-10-10</lastmod>
->>>>>>> 6c4052b7d0373c1edfda02fc5aa19e6d8dcf1c3b
+    <lastmod>2026-05-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
 
   <url>
-<<<<<<< HEAD
+    <loc>https://habibidigitalstudio.com/articles/digital-menu-vs-paper</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://habibidigitalstudio.com/articles/how-to-use-ai-smart</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
     <loc>https://habibidigitalstudio.com/products/digital-menu</loc>
-    <lastmod>2026-01-08</lastmod>
+    <lastmod>2026-05-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://habibidigitalstudio.com/start-project</loc>
-    <lastmod>2026-01-08</lastmod>
-=======
-    <loc>https://habibidigitalstudio.com/start-project</loc>
-    <lastmod>2025-10-10</lastmod>
->>>>>>> 6c4052b7d0373c1edfda02fc5aa19e6d8dcf1c3b
+    <lastmod>2026-05-16</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.6</priority>
   </url>
 
   <url>
     <loc>https://habibidigitalstudio.com/services/website-development</loc>
-<<<<<<< HEAD
-    <<lastmod>2026-01-08</lastmod>
-=======
-    <lastmod>2025-10-10</lastmod>
->>>>>>> 6c4052b7d0373c1edfda02fc5aa19e6d8dcf1c3b
+    <lastmod>2026-05-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://habibidigitalstudio.com/services/landing-page</loc>
-<<<<<<< HEAD
-    <lastmod>2026-01-08</lastmod>
-=======
-    <lastmod>2025-10-10</lastmod>
->>>>>>> 6c4052b7d0373c1edfda02fc5aa19e6d8dcf1c3b
+    <lastmod>2026-05-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://habibidigitalstudio.com/services/web-application</loc>
-<<<<<<< HEAD
-    <lastmod>2026-01-08</lastmod>
-=======
-    <lastmod>2025-10-10</lastmod>
->>>>>>> 6c4052b7d0373c1edfda02fc5aa19e6d8dcf1c3b
+    <lastmod>2026-05-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://habibidigitalstudio.com/services/website-redesign</loc>
-<<<<<<< HEAD
-    <lastmod>2026-01-08</lastmod>
-=======
-    <lastmod>2025-10-10</lastmod>
->>>>>>> 6c4052b7d0373c1edfda02fc5aa19e6d8dcf1c3b
+    <lastmod>2026-05-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://habibidigitalstudio.com/services/site-audit</loc>
-<<<<<<< HEAD
-    <lastmod>2026-01-08</lastmod>
-=======
-    <lastmod>2025-10-10</lastmod>
->>>>>>> 6c4052b7d0373c1edfda02fc5aa19e6d8dcf1c3b
+    <lastmod>2026-05-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://habibidigitalstudio.com/services/ui-design</loc>
-<<<<<<< HEAD
-    <lastmod>2026-01-08</lastmod>
-=======
-    <lastmod>2025-10-10</lastmod>
->>>>>>> 6c4052b7d0373c1edfda02fc5aa19e6d8dcf1c3b
+    <lastmod>2026-05-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
   <url>
     <loc>https://habibidigitalstudio.com/services/quick-fixes</loc>
-<<<<<<< HEAD
-    <lastmod>2026-01-08</lastmod>
-=======
-    <lastmod>2025-10-10</lastmod>
->>>>>>> 6c4052b7d0373c1edfda02fc5aa19e6d8dcf1c3b
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://habibidigitalstudio.com/services/ai-automation</loc>
+    <lastmod>2026-05-16</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://habibidigitalstudio.com/services/telegram-mini-app</loc>
+    <lastmod>2026-05-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
 
 </urlset>
-<<<<<<< HEAD
-=======
-
->>>>>>> 6c4052b7d0373c1edfda02fc5aa19e6d8dcf1c3b

@@ -39,13 +39,15 @@ document.addEventListener("DOMContentLoaded", () => {
   const step2Container = stepContainers.find(sc => sc.querySelector("h4") && sc.querySelector("h4").textContent.includes("Step 2"));
   // Map service index -> id of step3 block (in the same order as your service list)
   const serviceToStep3Id = [
-    "website-development-project",
-    "web-application-project",
-    "website-redesign-project",
-    "site-audit",
-    "quick-fixes",
-    "ui-design-project",
-    "one-page-project"
+    "one-page-project",                 // Landing Page
+    "website-development-project",      // Multi-page Website
+    "ui-design-project",                // UI Design
+    "site-audit",                       // Site Audit
+    "quick-fixes",                      // Quick Fixes
+    "website-redesign-project",         // Redesign
+    "web-application-project",          // Web App
+    "telegram-mini-app-project",        // NEW
+    "ai-automation-project"             // NEW
   ];
 
     stepContainers.forEach((sc, idx) => {
