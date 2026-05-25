@@ -29,13 +29,15 @@ function collectFormData() {
 
     data.step3 = {};
     const serviceToStep3Id = [
-        "website-development-project",
-        "web-application-project",
-        "website-redesign-project",
-        "site-audit",
-        "quick-fixes",
-        "ui-design-project",
-        "one-page-project"
+        "one-page-project",                 // 0: Landing Page
+        "website-development-project",      // 1: Multi-page Website
+        "ui-design-project",                // 2: UI Design
+        "site-audit",                       // 3: Site Audit
+        "quick-fixes",                      // 4: Quick Fixes
+        "website-redesign-project",         // 5: Redesign
+        "web-application-project",          // 6: Web App
+        "telegram-mini-app-project",        // 7: Telegram Mini App
+        "ai-automation-project"             // 8: AI & Automation
     ];
     const selectedIndexes = Array.from(document.querySelectorAll(".check-box-container.selected"))
                                  .map(b => Number(b.dataset.serviceIndex));
@@ -58,35 +60,41 @@ function collectFormData() {
 
 function checkRequiredFields() {
     let allFilled = true;
+    
+    document.querySelectorAll('.error-border').forEach(el => el.classList.remove('error-border'));
 
-    const step2Required = Array.from(document.querySelectorAll(".step-container:nth-child(2) .project-detail-container p mark"))
-                               .map(mark => mark.closest(".project-detail-container"));
-    step2Required.forEach(cont => {
+    const selectedServices = document.querySelectorAll(".check-box-container.selected");
+    if (selectedServices.length === 0) {
+        allFilled = false;
+    }
+
+    const step2 = Array.from(document.querySelectorAll('.step-container')).find(s => s.innerText.includes('Step 2'));
+    const step2Required = step2.querySelectorAll("p mark");
+    
+    step2Required.forEach(mark => {
+        const cont = mark.closest(".project-detail-container");
         const input = cont.querySelector("input, select, textarea");
-        if (!input || input.value.trim() === "") allFilled = false;
+        if (!input || input.value.trim() === "" || (input.tagName === "SELECT" && !input.value)) {
+            allFilled = false;
+            input.classList.add('error-border');
+        }
     });
 
-    const selectedIndexes = Array.from(document.querySelectorAll(".check-box-container.selected"))
-                                 .map(b => Number(b.dataset.serviceIndex));
-    const serviceToStep3Id = [
-        "website-development-project",
-        "web-application-project",
-        "website-redesign-project",
-        "site-audit",
-        "quick-fixes",
-        "ui-design-project",
-        "one-page-project"
-    ];
-    selectedIndexes.forEach(i => {
+    selectedServices.forEach(box => {
+        const i = Number(box.dataset.serviceIndex);
         const id = serviceToStep3Id[i];
         const block = document.getElementById(id);
-        if (!block) return;
-        const required = Array.from(block.querySelectorAll(".project-detail-container p mark"))
-                              .map(mark => mark.closest(".project-detail-container"));
-        required.forEach(cont => {
-            const input = cont.querySelector("input, select, textarea");
-            if (!input || input.value.trim() === "") allFilled = false;
-        });
+        if (block) {
+            const required = block.querySelectorAll("p mark");
+            required.forEach(mark => {
+                const cont = mark.closest(".project-detail-container");
+                const input = cont.querySelector("input, select, textarea");
+                if (!input || input.value.trim() === "" || (input.tagName === "SELECT" && !input.value)) {
+                    allFilled = false;
+                    input.classList.add('error-border');
+                }
+            });
+        }
     });
 
     return allFilled;
@@ -97,8 +105,18 @@ document.addEventListener("DOMContentLoaded", () => {
     sendBtn.dataset.originalText = sendBtn.textContent;
 
     sendBtn.addEventListener("click", async () => {
+        const oldErr = document.querySelector(".error-msg-text");
+        if (oldErr) oldErr.remove();
+
         if (!checkRequiredFields()) {
-            alert("Please fill all required fields (*) before sending your brief.");
+            const errMsg = document.createElement("p");
+            errMsg.className = "error-msg-text space-grotesk-font";
+            errMsg.style.color = "#FF4EFF"; 
+            errMsg.style.marginBottom = "10px";
+            errMsg.style.textAlign = "center";
+            errMsg.textContent = "Please fill all required fields (*) before sending.";
+            
+            sendBtn.parentElement.insertBefore(errMsg, sendBtn);
             return;
         }
 

@@ -2094,3 +2094,8 @@ svg { stroke-width: 5; }
             .pa-feats-row2 { grid-template-columns: 1fr; }
             .pa-tools-block { padding: 24px 20px; }
         }
+
+.error-border {
+    border: 1px solid #FF4EFF !important; /* Розовый неон */
+    box-shadow: 0 0 10px rgba(255, 78, 255, 0.2);
+}
