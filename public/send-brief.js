@@ -93,7 +93,7 @@ function checkRequiredFields() {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
-    const sendBtn = document.querySelector(".contacts-btns button");
+    const sendBtn = document.querySelector(".send-btn-wrap button");
     sendBtn.dataset.originalText = sendBtn.textContent;
 
     sendBtn.addEventListener("click", async () => {
@@ -140,9 +140,9 @@ document.addEventListener("DOMContentLoaded", () => {
 const modalContainer = document.querySelector(".sucsess-message-container");
 const closeModalBtn = document.querySelector(".close-modal");
 
-closeModalBtn.addEventListener("click", () => {
-    closeModal();
-})
+if (closeModalBtn) {
+    closeModalBtn.addEventListener("click", closeModal);
+}
 
 function closeModal() {
     modalContainer.classList.add("d-none");
