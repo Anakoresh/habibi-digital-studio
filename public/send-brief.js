@@ -1,3 +1,16 @@
+// 1. ВЫНЕСЛИ СЮДА, ЧТОБЫ ВСЕ ФУНКЦИИ ВИДЕЛИ ЭТОТ СПИСОК
+const serviceToStep3Id = [
+    "one-page-project",                 // 0: Landing Page
+    "website-development-project",      // 1: Multi-page Website
+    "ui-design-project",                // 2: UI Design
+    "site-audit",                       // 3: Site Audit
+    "quick-fixes",                      // 4: Quick Fixes
+    "website-redesign-project",         // 5: Redesign
+    "web-application-project",          // 6: Web App
+    "telegram-mini-app-project",        // 7: Telegram Mini App
+    "ai-automation-project"             // 8: AI & Automation
+];
+
 async function sendToTelegram(message) {
     try {
         const res = await fetch("/api/send-telegram", {
@@ -19,7 +32,7 @@ function collectFormData() {
                           .map(p => p.textContent.trim());
     data.step1_services = services;
 
-    const step2Fields = Array.from(document.querySelectorAll(".step-container:nth-child(2) .project-detail-container"));
+    const step2Fields = Array.from(document.querySelectorAll('.step-container')).find(s => s.innerText.includes('Step 2')).querySelectorAll(".project-detail-container");
     data.step2 = {};
     step2Fields.forEach(f => {
         const label = f.querySelector("p")?.textContent.replace(/\*/g,'').trim();
@@ -28,17 +41,6 @@ function collectFormData() {
     });
 
     data.step3 = {};
-    const serviceToStep3Id = [
-        "one-page-project",                 // 0: Landing Page
-        "website-development-project",      // 1: Multi-page Website
-        "ui-design-project",                // 2: UI Design
-        "site-audit",                       // 3: Site Audit
-        "quick-fixes",                      // 4: Quick Fixes
-        "website-redesign-project",         // 5: Redesign
-        "web-application-project",          // 6: Web App
-        "telegram-mini-app-project",        // 7: Telegram Mini App
-        "ai-automation-project"             // 8: AI & Automation
-    ];
     const selectedIndexes = Array.from(document.querySelectorAll(".check-box-container.selected"))
                                  .map(b => Number(b.dataset.serviceIndex));
 
@@ -66,6 +68,7 @@ function checkRequiredFields() {
     const selectedServices = document.querySelectorAll(".check-box-container.selected");
     if (selectedServices.length === 0) {
         allFilled = false;
+        // Можно добавить визуальный алерт для услуг
     }
 
     const step2 = Array.from(document.querySelectorAll('.step-container')).find(s => s.innerText.includes('Step 2'));
@@ -74,7 +77,7 @@ function checkRequiredFields() {
     step2Required.forEach(mark => {
         const cont = mark.closest(".project-detail-container");
         const input = cont.querySelector("input, select, textarea");
-        if (!input || input.value.trim() === "" || (input.tagName === "SELECT" && !input.value)) {
+        if (!input || input.value.trim() === "" || (input.tagName === "SELECT" && (!input.value || input.value === ""))) {
             allFilled = false;
             input.classList.add('error-border');
         }
@@ -89,7 +92,7 @@ function checkRequiredFields() {
             required.forEach(mark => {
                 const cont = mark.closest(".project-detail-container");
                 const input = cont.querySelector("input, select, textarea");
-                if (!input || input.value.trim() === "" || (input.tagName === "SELECT" && !input.value)) {
+                if (!input || input.value.trim() === "" || (input.tagName === "SELECT" && (!input.value || input.value === ""))) {
                     allFilled = false;
                     input.classList.add('error-border');
                 }
@@ -102,6 +105,8 @@ function checkRequiredFields() {
 
 document.addEventListener("DOMContentLoaded", () => {
     const sendBtn = document.querySelector(".send-btn-wrap button");
+    if (!sendBtn) return;
+    
     sendBtn.dataset.originalText = sendBtn.textContent;
 
     sendBtn.addEventListener("click", async () => {
@@ -130,15 +135,15 @@ document.addEventListener("DOMContentLoaded", () => {
 
         message += "<b>Step 2: Project Details</b>\n";
         for (const [key, value] of Object.entries(formData.step2)) {
-            message += `<b>${key}</b> ${value}\n`;
+            message += `<b>${key}:</b> ${value}\n`;
         }
         message += "\n";
 
         message += "<b>Step 3: Service-specific Questions</b>\n";
         for (const [serviceId, fields] of Object.entries(formData.step3)) {
-            message += `<i>${serviceId}</i>\n`;
+            message += `<i>--- ${serviceId} ---</i>\n`;
             for (const [key, value] of Object.entries(fields)) {
-                message += `<b>${key}</b> ${value}\n`;
+                message += `<b>${key}:</b> ${value}\n`;
             }
             message += "\n";
         }
@@ -163,14 +168,16 @@ if (closeModalBtn) {
 }
 
 function closeModal() {
-    modalContainer.classList.add("d-none");
+    if (modalContainer) modalContainer.classList.add("d-none");
 }
 
 function openModal() {
-    modalContainer.classList.remove("d-none");
-    setTimeout(() => {
-        closeModal();
-    }, 4500);
+    if (modalContainer) {
+        modalContainer.classList.remove("d-none");
+        setTimeout(() => {
+            closeModal();
+        }, 4500);
+    }
 }
 
 function setButtonLoading(button, isLoading) {
